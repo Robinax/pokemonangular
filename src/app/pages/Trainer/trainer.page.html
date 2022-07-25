@@ -1,0 +1,8 @@
+<div class="text-center">
+    <h1 class="fontPokemon text-center p-5">Welcome {{username}}</h1>
+    <button  (click)="logout()" class="fontPokemon bg-sky-400 rounded p-3">Logout</button>
+    </div>
+    <h3 class="fontPokemon text-center p-5">Here are the pokemons in your list.</h3>
+    <app-pokemon-catalogue [pokemons]="collection"></app-pokemon-catalogue>
+    
+    

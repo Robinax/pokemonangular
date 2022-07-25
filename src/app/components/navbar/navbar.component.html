@@ -1,0 +1,13 @@
+<nav class="bg-purple-700 flex justify-between fontPokemon text-yellow-300 p-5 sticky w-full">
+<span class="fontPokemon text-yellow-300 text-4xl " >Pokemon! Got to catch them all</span>
+<ng-container *ngIf="user !== undefined">
+<ul flex>
+    <li>
+       <a class="text-1xl" routerLink="/pokemon-list">Pokemon catalogue</a>
+    </li>
+    <li >
+       <a class="text-1xl" routerLink="/trainer">Trainer: {{ user.username }}</a>
+    </li>
+</ul>
+</ng-container>
+</nav>

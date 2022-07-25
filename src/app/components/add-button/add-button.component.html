@@ -1,0 +1,11 @@
+<aside class=" top-4 right-4">
+    <button (click)="onAddClicked()" class="bg-red-600 rounded-full  p-2">
+        <ng-container *ngIf="isPokemonCollection; then collection else notCollection"></ng-container>
+        <ng-template #collection>
+            <span>-</span>
+        </ng-template>
+        <ng-template #notCollection>
+            <span>+</span>
+        </ng-template>
+    </button>
+    <aside>

@@ -1,0 +1,10 @@
+<div class="catalogue">
+    
+    <ul class="list">
+        <li class="pokemon  bg-sky-400 fontPokemon relative " *ngFor="let pokemon of pokemons">                   
+            <app-add-button class="" [pokemonName]="pokemon.name"></app-add-button>
+            <span class="name">{{ pokemon.name }}</span>
+            <img [src]="pokemon.imgUrl" [alt]="pokemon.name"/>           
+        </li>
+    </ul>
+</div>
